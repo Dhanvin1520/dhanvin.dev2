@@ -300,18 +300,12 @@
                 DHANVIN.exe
             </a>
 
-            <div class="hidden md:flex gap-4 bg-white border-2 border-black p-2 shadow-hard">
-                <a href="#about"
-                    class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/ABOUT</a>
-                <a href="#skills"
-                    class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/SKILLS</a>
-                <a href="#experience"
-                    class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/LOGS</a>
-                <a href="#projects"
-                    class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/WORK</a>
-                <a href="#contact"
-                    class="px-3 py-1 font-mono font-bold text-sm bg-neo-yellow border border-black hover:bg-neo-pink transition-colors cursor-hover">HIRE
-                    ME</a>
+            <div class="hidden md:flex bg-white border-2 border-black shadow-hard-sm">
+                <a href="#about" class="px-4 py-2 font-black uppercase border-r-2 border-black hover:bg-neo-yellow transition-colors cursor-hover">/ABOUT</a>
+                <a href="#skills" class="px-4 py-2 font-black uppercase border-r-2 border-black hover:bg-neo-blue hover:text-white transition-colors cursor-hover">/SKILLS</a>
+                <a href="#coding-stats" class="px-4 py-2 font-black uppercase border-r-2 border-black hover:bg-neo-green transition-colors cursor-hover">/LOGS</a>
+                <a href="projects.html" class="px-4 py-2 font-black uppercase border-r-2 border-black hover:bg-neo-pink transition-colors cursor-hover">/WORK</a>
+                <a href="#contact" class="px-4 py-2 font-black uppercase bg-neo-yellow hover:bg-black hover:text-white transition-colors cursor-hover">HIRE ME</a>
             </div>
         </div>
     </nav>
@@ -412,19 +406,18 @@
             <div class="md:col-span-8 flex flex-col justify-center reveal">
                 <h2 class="text-6xl font-black uppercase mb-6">Who am I?</h2>
                 <p class="font-mono text-xl leading-relaxed mb-6">
-                    I am Dhanvin Vadlamudi. A backend engineer and AI/ML specialist who builds <span
-                        class="bg-neo-yellow px-1 border border-black">scalable</span> systems and intelligent
-                    pipelines.
+                    Backend and AI/ML-focused Software Developer with internship and freelance experience building <span
+                        class="bg-neo-yellow px-1 border border-black">full-stack systems</span>, NLP pipelines,
+                    AI-driven automation workflows, and LLM-integrated tools with measurable outcomes in real-world use cases.
                 </p>
-                <p class="font-mono text-lg mb-8 text-gray-600 border-l-4 border-neo-purple pl-4">
-                    > Specialized in FastAPI, Node.js, and LLM integrations.<br>
-                    > Expert in building RAG pipelines and NLP systems.<br>
-                    > Shipping production-ready code with speed and precision.
-                </p>
+                <div class="flex flex-col gap-2 font-mono text-lg mb-8 text-gray-600 border-l-4 border-neo-purple pl-4">
+                    <span>> Bachelor of Technology in Computer Science (Artificial Intelligence)</span>
+                    <span>> Newton School of Technology, Rishihood University (2024 – 2028)</span>
+                </div>
 
                 <div class="flex gap-4">
                     <div class="bg-neo-black text-white px-4 py-2 font-mono text-sm border-2 border-transparent">
-                        📍 LOCATION: HYDERABAD & DELHI
+                        📍 LOCATION: DELHI NCR
                     </div>
                     <div class="bg-neo-green text-black px-4 py-2 font-mono text-sm border-2 border-black">
                         🟢 STATUS: AVAILABLE
@@ -583,60 +576,66 @@
         </div>
     </section>
 
-    <section id="experience" class="py-24 px-4 max-w-7xl mx-auto">
-        <h2 class="text-5xl md:text-8xl font-black uppercase mb-12 tracking-tighter text-center">
-            Experience<span class="text-neo-red">_Log</span>
-        </h2>
+    <section id="experience" class="py-24 bg-neo-black text-white border-y-4 border-black relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px); background-size: 40px 40px;">
+        </div>
 
-        <div class="relative border-l-4 border-black ml-4 md:ml-10 space-y-12">
-            <div class="reveal relative pl-8 md:pl-16">
-                <div class="absolute -left-[14px] top-2 w-6 h-6 bg-neo-yellow border-4 border-black"></div>
-                <div class="bg-white border-4 border-black p-6 shadow-hard hover:shadow-hard-xl transition-all">
-                    <div
-                        class="flex flex-col md:flex-row justify-between items-start md:items-center border-b-2 border-dashed border-gray-300 pb-4 mb-4">
-                        <h3 class="text-3xl font-black uppercase">Software Engineer Intern</h3>
-                        <span class="font-mono font-bold bg-neo-black text-white px-2 py-1">Jun 2025 - Oct 2025</span>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <h2 class="text-5xl md:text-8xl font-black uppercase mb-16 tracking-tighter text-center">
+                Experience<span class="text-neo-red">_Log</span>
+            </h2>
+
+            <div class="relative border-l-4 border-white/20 ml-4 md:ml-10 space-y-12">
+                <div class="reveal relative pl-8 md:pl-16">
+                    <div class="absolute -left-[14px] top-2 w-6 h-6 bg-neo-yellow border-4 border-black"></div>
+                    <div class="bg-black border-4 border-white/20 p-6 shadow-[8px_8px_0_rgba(251,255,72,0.1)] hover:border-neo-yellow transition-all group">
+                        <div
+                            class="flex flex-col md:flex-row justify-between items-start md:items-center border-b-2 border-dashed border-white/10 pb-4 mb-4">
+                            <h3 class="text-3xl font-black uppercase text-white group-hover:text-neo-yellow transition-colors">Software Engineer Intern</h3>
+                            <span class="font-mono font-bold bg-neo-yellow text-black px-3 py-1">Jun 2025 - Oct 2025</span>
+                        </div>
+                        <p class="font-mono text-xl mb-4 text-neo-yellow font-bold uppercase tracking-tight">@ THOUGHTIV, HYDERABAD</p>
+                        <ul class="list-none font-mono text-gray-400 space-y-3">
+                            <li class="flex gap-3"><span class="text-neo-yellow">></span> Built a full-stack SEO automation platform end-to-end using FastAPI and Chrome MV3</li>
+                            <li class="flex gap-3"><span class="text-neo-yellow">></span> Designed a SpaCy NER pipeline on CPU infrastructure, reducing false-positives by 60%</li>
+                            <li class="flex gap-3"><span class="text-neo-yellow">></span> Managed API versioning and production observability, maintaining 99.5%+ uptime</li>
+                        </ul>
                     </div>
-                    <p class="font-mono text-xl mb-2 text-neo-yellow font-bold">@ THOUGHTIV, HYDERABAD</p>
-                    <ul class="list-disc list-inside font-mono text-gray-700 space-y-1">
-                        <li>Built a full-stack SEO automation platform end-to-end using FastAPI and Chrome MV3</li>
-                        <li>Designed a SpaCy NER pipeline on CPU infrastructure, reducing false-positives by 60%</li>
-                        <li>Managed API versioning and production observability, maintaining 99.5%+ uptime</li>
-                    </ul>
                 </div>
-            </div>
 
-            <div class="reveal relative pl-8 md:pl-16">
-                <div class="absolute -left-[14px] top-2 w-6 h-6 bg-neo-red border-4 border-black"></div>
-                <div class="bg-white border-4 border-black p-6 shadow-hard hover:shadow-hard-xl transition-all">
-                    <div
-                        class="flex flex-col md:flex-row justify-between items-start md:items-center border-b-2 border-dashed border-gray-300 pb-4 mb-4">
-                        <h3 class="text-3xl font-black uppercase">Freelance Web Developer</h3>
-                        <span class="font-mono font-bold bg-neo-black text-white px-2 py-1">Mar 2025 - May 2025</span>
+                <div class="reveal relative pl-8 md:pl-16">
+                    <div class="absolute -left-[14px] top-2 w-6 h-6 bg-neo-red border-4 border-black"></div>
+                    <div class="bg-black border-4 border-white/20 p-6 shadow-[8px_8px_0_rgba(255,42,42,0.1)] hover:border-neo-red transition-all group">
+                        <div
+                            class="flex flex-col md:flex-row justify-between items-start md:items-center border-b-2 border-dashed border-white/10 pb-4 mb-4">
+                            <h3 class="text-3xl font-black uppercase text-white group-hover:text-neo-red transition-colors">Freelance Web Developer</h3>
+                            <span class="font-mono font-bold bg-neo-red text-white px-3 py-1">Mar 2025 - May 2025</span>
+                        </div>
+                        <p class="font-mono text-xl mb-4 text-neo-red font-bold uppercase tracking-tight">@ INDEPENDENT</p>
+                        <ul class="list-none font-mono text-gray-400 space-y-3">
+                            <li class="flex gap-3"><span class="text-neo-red">></span> Delivered 2 production web applications using React and Node.js</li>
+                            <li class="flex gap-3"><span class="text-neo-red">></span> Integrated third-party payment and booking APIs for automated admin workflows</li>
+                            <li class="flex gap-3"><span class="text-neo-red">></span> Managed end-to-end delivery within aggressive agreed timelines</li>
+                        </ul>
                     </div>
-                    <p class="font-mono text-xl mb-2 text-neo-red font-bold">@ INDEPENDENT</p>
-                    <ul class="list-disc list-inside font-mono text-gray-700 space-y-1">
-                        <li>Delivered 2 production web applications using React and Node.js</li>
-                        <li>Integrated third-party payment and booking APIs for automated admin workflows</li>
-                        <li>Managed end-to-end delivery within aggressive agreed timelines</li>
-                    </ul>
                 </div>
-            </div>
 
-            <div class="reveal relative pl-8 md:pl-16">
-                <div class="absolute -left-[14px] top-2 w-6 h-6 bg-neo-green border-4 border-black"></div>
-                <div class="bg-white border-4 border-black p-6 shadow-hard hover:shadow-hard-xl transition-all">
-                    <div
-                        class="flex flex-col md:flex-row justify-between items-start md:items-center border-b-2 border-dashed border-gray-300 pb-4 mb-4">
-                        <h3 class="text-3xl font-black uppercase">Full-Stack Bootcamp</h3>
-                        <span class="font-mono font-bold bg-neo-black text-white px-2 py-1">Jul 2025</span>
+                <div class="reveal relative pl-8 md:pl-16">
+                    <div class="absolute -left-[14px] top-2 w-6 h-6 bg-neo-green border-4 border-black"></div>
+                    <div class="bg-black border-4 border-white/20 p-6 shadow-[8px_8px_0_rgba(51,255,87,0.1)] hover:border-neo-green transition-all group">
+                        <div
+                            class="flex flex-col md:flex-row justify-between items-start md:items-center border-b-2 border-dashed border-white/10 pb-4 mb-4">
+                            <h3 class="text-3xl font-black uppercase text-white group-hover:text-neo-green transition-colors">Full-Stack Bootcamp</h3>
+                            <span class="font-mono font-bold bg-neo-green text-black px-3 py-1">Jul 2025</span>
+                        </div>
+                        <p class="font-mono text-xl mb-4 text-neo-green font-bold uppercase tracking-tight">@ ALFALEUS TECH, IIT HYDERABAD</p>
+                        <ul class="list-none font-mono text-gray-400 space-y-3">
+                            <li class="flex gap-3"><span class="text-neo-green">></span> Selected in top 10% from 1,200+ applicants for intensive development training</li>
+                            <li class="flex gap-3"><span class="text-neo-green">></span> Shipped production projects in full-stack automation and web scraping pipelines</li>
+                            <li class="flex gap-3"><span class="text-neo-green">></span> Focused on backend API integrations and Chrome extension development</li>
+                        </ul>
                     </div>
-                    <p class="font-mono text-xl mb-2 text-neo-green font-bold">@ ALFALEUS TECH, IIT HYDERABAD</p>
-                    <ul class="list-disc list-inside font-mono text-gray-700 space-y-1">
-                        <li>Selected in top 10% from 1,200+ applicants for intensive development training</li>
-                        <li>Shipped production projects in full-stack automation and web scraping pipelines</li>
-                        <li>Focused on backend API integrations and Chrome extension development</li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -938,397 +937,182 @@
                 Selected Works
             </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <article class="reveal group bg-white border-4 border-black p-4 shadow-hard">
-                    <div
-                        class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6 group-hover:shadow-none transition-all">
-                        <img src="Assets/images/phisgaurd.png"
-                            alt="PR Review Bot - AI-Powered GitHub Code Review SaaS by Dhanvin"
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
-                    </div>
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <h3
-                                class="text-4xl font-black uppercase mb-2 group-hover:text-neo-red transition-colors glitch-hover">
-                                PR Review Bot</h3>
-                            <p class="font-mono text-sm mb-4 max-w-xs">AI-Powered SaaS that routes PR diffs through
-                                LLaMA 3 to provide instant, structured code feedback as inline comments.</p>
-                            <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
-                                <span class="bg-neo-black text-white px-2 py-1">FastAPI</span>
-                                <span class="bg-neo-black text-white px-2 py-1">Groq</span>
-                                <span class="bg-neo-black text-white px-2 py-1">React</span>
-                                <span class="bg-neo-black text-white px-2 py-1">MongoDB</span>
-                            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <article class="reveal group bg-neo-black border-4 border-white p-6 shadow-[8px_8px_0_rgba(251,255,72,0.1)] hover:border-neo-yellow transition-all">
+                    <div class="bg-black border-2 border-white aspect-video relative overflow-hidden mb-6">
+                        <img src="Assets/images/pr_bot_final.png" alt="PR Review Bot" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute top-2 right-2 flex gap-2">
+                            <span class="bg-neo-red text-white text-[10px] font-black px-2 py-0.5 border border-white">AI_BOT</span>
                         </div>
-                        <a href="https://github.com/Dhanvin1520/PR-Review-Bot"
-                            class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm">
-                            <i class="ri-arrow-right-up-line text-2xl"></i>
-                        </a>
+                    </div>
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-3xl font-black uppercase mb-2 text-white group-hover:text-neo-yellow transition-colors">PR Review Bot</h3>
+                        <p class="font-mono text-xs mb-4 text-gray-400">AI-Powered GitHub Code Review Tool analyzing pull request diffs for critical bugs and security issues.</p>
+                        <div class="flex gap-2 font-mono text-[10px] font-bold flex-wrap mb-6">
+                            <span class="bg-white/10 text-white px-2 py-1">FastAPI</span>
+                            <span class="bg-white/10 text-white px-2 py-1">LLaMA 3</span>
+                            <span class="bg-white/10 text-white px-2 py-1">React</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-white/10">
+                            <a href="https://github.com/Dhanvin1520/prbot" class="flex-1 py-4 border-2 border-neo-yellow bg-neo-yellow text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-yellow transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(251,255,72,0.2)] hover:shadow-none">
+                                <i class="ri-github-fill text-xl"></i> GITHUB_REPO
+                            </a>
+                            <a href="https://prbot-19cc.vercel.app/" class="flex-1 py-4 border-2 border-neo-green bg-neo-green text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-green transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(51,255,87,0.2)] hover:shadow-none">
+                                <i class="ri-external-link-line text-xl"></i> LIVE_DEMO
+                            </a>
+                        </div>
                     </div>
                 </article>
 
-                <article class="reveal group bg-white border-4 border-black p-4 shadow-hard mt-0 md:mt-20">
-                    <div
-                        class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6 group-hover:shadow-none transition-all">
-                        <img src="Assets/images/stoceasy.png"
-                            alt="MeetingMind - AI Meeting Intelligence Chrome Extension by Dhanvin"
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
-                    </div>
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <h3
-                                class="text-4xl font-black uppercase mb-2 group-hover:text-neo-blue transition-colors glitch-hover">
-                                MeetingMind</h3>
-                            <p class="font-mono text-sm mb-4 max-w-xs">Chrome extension capturing live audio for
-                                asynchronous transcription and summarization using BART models.</p>
-                            <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
-                                <span class="bg-neo-black text-white px-2 py-1">Chrome MV3</span>
-                                <span class="bg-neo-black text-white px-2 py-1">FastAPI</span>
-                                <span class="bg-neo-black text-white px-2 py-1">BART</span>
-                                <span class="bg-neo-black text-white px-2 py-1">Docker</span>
-                            </div>
+                <article class="reveal group bg-neo-black border-4 border-white p-6 shadow-[8px_8px_0_rgba(59,130,246,0.1)] hover:border-neo-blue transition-all md:mt-12">
+                    <div class="bg-black border-2 border-white aspect-video relative overflow-hidden mb-6">
+                        <img src="Assets/images/meeting_mind_final.png" alt="MeetingMind" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute top-2 right-2 flex gap-2">
+                            <span class="bg-neo-blue text-white text-[10px] font-black px-2 py-0.5 border border-white">CHROME_EXT</span>
                         </div>
-                        <a href="https://github.com/Dhanvin1520/MeetingMind"
-                            class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm">
-                            <i class="ri-arrow-right-up-line text-2xl"></i>
-                        </a>
+                    </div>
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-3xl font-black uppercase mb-2 text-white group-hover:text-neo-blue transition-colors">MeetingMind</h3>
+                        <p class="font-mono text-xs mb-4 text-gray-400">Chrome extension for asynchronous transcription and summarization using BART models.</p>
+                        <div class="flex gap-2 font-mono text-[10px] font-bold flex-wrap mb-6">
+                            <span class="bg-white/10 text-white px-2 py-1">MV3</span>
+                            <span class="bg-white/10 text-white px-2 py-1">FastAPI</span>
+                            <span class="bg-white/10 text-white px-2 py-1">BART</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-white/10">
+                            <a href="https://github.com/Dhanvin1520/meetingmind-ai" class="flex-1 py-4 border-2 border-neo-blue bg-neo-blue text-white flex items-center justify-center gap-3 hover:bg-black hover:text-neo-blue transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(59,130,246,0.2)] hover:shadow-none">
+                                <i class="ri-github-fill text-xl"></i> GITHUB_REPO
+                            </a>
+                            <a href="https://meetingmind-ai-qw6i.vercel.app/" class="flex-1 py-4 border-2 border-neo-green bg-neo-green text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-green transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(51,255,87,0.2)] hover:shadow-none">
+                                <i class="ri-external-link-line text-xl"></i> LIVE_DEMO
+                            </a>
+                        </div>
                     </div>
                 </article>
 
-                <article class="reveal group bg-white border-4 border-black p-4 shadow-hard">
-                    <div
-                        class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6 group-hover:shadow-none transition-all">
-                        <img src="Assets/images/creative-portfolio.png"
-                            alt="PeerSpace - Real-Time Study Collaboration Platform by Dhanvin"
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
-                    </div>
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <h3
-                                class="text-4xl font-black uppercase mb-2 group-hover:text-neo-pink transition-colors glitch-hover">
-                                PeerSpace</h3>
-                            <p class="font-mono text-sm mb-4 max-w-xs">A real-time collaboration platform supporting 5+
-                                concurrent users with Socket.io and WebRTC for P2P video.</p>
-                            <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
-                                <span class="bg-neo-black text-white px-2 py-1">React</span>
-                                <span class="bg-neo-black text-white px-2 py-1">Node.js</span>
-                                <span class="bg-neo-black text-white px-2 py-1">Socket.io</span>
-                                <span class="bg-neo-black text-white px-2 py-1">WebRTC</span>
-                            </div>
+                <article class="reveal group bg-neo-black border-4 border-white p-6 shadow-[8px_8px_0_rgba(255,112,166,0.1)] hover:border-neo-pink transition-all">
+                    <div class="bg-black border-2 border-white aspect-video relative overflow-hidden mb-6">
+                        <img src="Assets/images/peerspace_final.png" alt="PeerSpace" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute top-2 right-2 flex gap-2">
+                            <span class="bg-neo-pink text-white text-[10px] font-black px-2 py-0.5 border border-white">COLLAB</span>
                         </div>
-                        <a href="https://github.com/Dhanvin1520/PeerSpace"
-                            class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm">
-                            <i class="ri-arrow-right-up-line text-2xl"></i>
-                        </a>
+                    </div>
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-3xl font-black uppercase mb-2 text-white group-hover:text-neo-pink transition-colors">PeerSpace</h3>
+                        <p class="font-mono text-xs mb-4 text-gray-400">Real-time collaboration platform with Socket.io and WebRTC for P2P video and study tools.</p>
+                        <div class="flex gap-2 font-mono text-[10px] font-bold flex-wrap mb-6">
+                            <span class="bg-white/10 text-white px-2 py-1">React</span>
+                            <span class="bg-white/10 text-white px-2 py-1">Socket.io</span>
+                            <span class="bg-white/10 text-white px-2 py-1">WebRTC</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-white/10">
+                            <a href="https://github.com/Dhanvin1520/Ultimate-B-Tech-Buddy" class="flex-1 py-4 border-2 border-neo-pink bg-neo-pink text-white flex items-center justify-center gap-3 hover:bg-black hover:text-neo-pink transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(255,112,166,0.2)] hover:shadow-none">
+                                <i class="ri-github-fill text-xl"></i> GITHUB_REPO
+                            </a>
+                            <a href="https://ultimate-b-tech-buddy-vpld.vercel.app/" class="flex-1 py-4 border-2 border-neo-green bg-neo-green text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-green transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(51,255,87,0.2)] hover:shadow-none">
+                                <i class="ri-external-link-line text-xl"></i> LIVE_DEMO
+                            </a>
+                        </div>
                     </div>
                 </article>
 
-                <article class="reveal group bg-white border-4 border-black p-4 shadow-hard mt-0 md:mt-20">
-                    <div
-                        class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6 group-hover:shadow-none transition-all">
-                        <img src="Assets/images/habit-tracker.png"
-                            alt="PayShield - Digital Banking Fraud Detection by Dhanvin"
-                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
-                    </div>
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <h3
-                                class="text-4xl font-black uppercase mb-2 group-hover:text-neo-orange transition-colors glitch-hover">
-                                PayShield</h3>
-                            <p class="font-mono text-sm mb-4 max-w-xs">Secure digital banking system featuring real-time
-                                fraud detection and secure transaction pipelines.</p>
-                            <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
-                                <span class="bg-neo-black text-white px-2 py-1">Python</span>
-                                <span class="bg-neo-black text-white px-2 py-1">FastAPI</span>
-                                <span class="bg-neo-black text-white px-2 py-1">ML</span>
-                                <span class="bg-neo-black text-white px-2 py-1">PostgreSQL</span>
-                            </div>
+                <article class="reveal group bg-neo-black border-4 border-white p-6 shadow-[8px_8px_0_rgba(255,159,28,0.1)] hover:border-neo-orange transition-all md:mt-12">
+                    <div class="bg-black border-2 border-white aspect-video relative overflow-hidden mb-6">
+                        <img src="Assets/images/credit_risk_final.png" alt="Credit Risk RAG" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute top-2 right-2 flex gap-2">
+                            <span class="bg-neo-orange text-white text-[10px] font-black px-2 py-0.5 border border-white">FINTECH</span>
                         </div>
-                        <a href="https://github.com/Dhanvin1520/PayShield"
-                            class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm">
-                            <i class="ri-arrow-right-up-line text-2xl"></i>
-                        </a>
+                    </div>
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-3xl font-black uppercase mb-2 text-white group-hover:text-neo-orange transition-colors">Credit Risk RAG</h3>
+                        <p class="font-mono text-xs mb-4 text-gray-400">Predictive lending system using XGBoost and RAG-based agent for policy retrieval.</p>
+                        <div class="flex gap-2 font-mono text-[10px] font-bold flex-wrap mb-6">
+                            <span class="bg-white/10 text-white px-2 py-1">Python</span>
+                            <span class="bg-white/10 text-white px-2 py-1">LangGraph</span>
+                            <span class="bg-white/10 text-white px-2 py-1">FAISS</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-white/10">
+                            <a href="https://github.com/Dhanvin1520/Credit_Risk_RAGSystem/" class="flex-1 py-4 border-2 border-neo-orange bg-neo-orange text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-orange transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(255,159,28,0.2)] hover:shadow-none">
+                                <i class="ri-github-fill text-xl"></i> GITHUB_REPO
+                            </a>
+                            <a href="https://credit-risk-system6.streamlit.app/" class="flex-1 py-4 border-2 border-neo-green bg-neo-green text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-green transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(51,255,87,0.2)] hover:shadow-none">
+                                <i class="ri-external-link-line text-xl"></i> LIVE_DEMO
+                            </a>
+                        </div>
                     </div>
                 </article>
-                <!-- End Projects -->
             </div>
 
-            <div class="text-center mt-24">
-                <a href="https://github.com/Dhanvin1520?tab=repositories"
-                    class="inline-block bg-neo-black text-white px-12 py-5 font-bold font-mono text-xl hover:bg-neo-white hover:text-black border-4 border-black transition-all shadow-hard hover:shadow-none cursor-hover">
-                    VIEW ALL REPOS ON GITHUB
+            <div class="text-center mt-20">
+                <a href="projects.html"
+                    class="inline-block bg-neo-black text-white px-10 py-4 font-black font-mono text-lg hover:bg-white hover:text-black border-4 border-white transition-all shadow-[8px_8px_0_rgba(255,255,255,0.1)] hover:shadow-none cursor-hover">
+                    VIEW ALL PROJECTS
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="reports" class="py-24 bg-neo-black border-t-4 border-black overflow-hidden relative">
-        <div class="max-w-7xl mx-auto px-4">
-            <div
-                class="flex items-center gap-2 mb-16 bg-white/5 border-2 border-white/10 p-4 inline-flex shadow-hard shadow-neo-blue/20">
-                <div class="flex gap-2">
-                    <div class="h-3 w-3 bg-red-500 rounded-full border border-black"></div>
-                    <div class="h-3 w-3 bg-yellow-500 rounded-full border border-black"></div>
-                    <div class="h-3 w-3 bg-green-500 rounded-full border border-black"></div>
-                </div>
-                <h2 class="font-mono text-white text-xl font-bold ml-4 tracking-tighter">USER_REPORTS.txt</h2>
-                <div class="ml-8 px-2 bg-neo-blue text-black text-[10px] font-black uppercase">LIVE_FEED</div>
-            </div>
+
+    <section id="contact" class="py-24 bg-neo-black text-white border-t-4 border-black relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px); background-size: 40px 40px;">
         </div>
 
-        <div class="marquee-container group cursor-hover">
-            <div class="marquee-content flex gap-8 py-12 px-4 select-none">
-                <!-- Original Set -->
+        <div class="max-w-5xl mx-auto px-4 relative z-10">
+            <div class="bg-black border-4 border-white p-8 md:p-12 relative reveal mt-12 shadow-[12px_12px_0_rgba(251,255,72,0.1)]">
                 <div
-                    class="flex-shrink-0 w-[450px] bg-neo-black border-4 border-white/10 p-8 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 relative group/card overflow-hidden text-left whitespace-normal">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-neo-green"></div>
-                    <div class="absolute -top-4 -right-4 w-12 h-12 bg-white/5 rotate-45"></div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="font-mono text-neo-green text-xs font-bold tracking-widest uppercase">REPORT_001.log
-                        </div>
-                        <div class="text-[10px] font-mono text-gray-500">2025.txt</div>
-                    </div>
-                    <div class="font-mono text-gray-400 text-[10px] mb-2 uppercase tracking-tight">FROM: Student @ L J
-                        University</div>
-                    <p class="font-bold text-xl leading-snug mb-6 text-white/90">"Dhanvin proved no matter the pressure
-                        or
-                        tight deadlines, he delivers outstanding projects."</p>
-                    <div class="flex text-neo-green/60 gap-1 text-lg">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
-                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
-                    </div>
+                    class="absolute -top-10 -left-6 bg-neo-yellow border-4 border-black px-6 py-2 shadow-hard rotate-[-5deg]">
+                    <span class="font-black text-2xl text-black">START A PROJECT</span>
                 </div>
 
-                <div
-                    class="flex-shrink-0 w-[450px] bg-neo-black border-4 border-white/10 p-8 shadow-hard hover:border-neo-blue/50 hover:-translate-y-2 transition-all duration-500 relative group/card overflow-hidden text-left whitespace-normal">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-neo-blue"></div>
-                    <div class="absolute -top-4 -right-4 w-12 h-12 bg-white/5 rotate-45"></div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="font-mono text-neo-blue text-xs font-bold tracking-widest uppercase">REPORT_002.log
-                        </div>
-                        <div class="text-[10px] font-mono text-gray-500">2025.txt</div>
-                    </div>
-                    <div class="font-mono text-gray-400 text-[10px] mb-2 uppercase tracking-tight">FROM: CEO @ Alpha
-                        Consultancy</div>
-                    <p class="font-bold text-xl leading-snug mb-6 text-white/90">"Fast, reliable, and actually has good
-                        taste in design. A rare combination."</p>
-                    <div class="flex text-neo-blue/60 gap-1 text-lg">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
-                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
-                    </div>
-                </div>
-
-                <div
-                    class="flex-shrink-0 w-[450px] bg-neo-black border-4 border-white/10 p-8 shadow-hard hover:border-neo-pink/50 hover:-translate-y-2 transition-all duration-500 relative group/card overflow-hidden text-left whitespace-normal">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-neo-pink"></div>
-                    <div class="absolute -top-4 -right-4 w-12 h-12 bg-white/5 rotate-45"></div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="font-mono text-neo-pink text-xs font-bold tracking-widest uppercase">REPORT_003.log
-                        </div>
-                        <div class="text-[10px] font-mono text-gray-500">2025.txt</div>
-                    </div>
-                    <div class="font-mono text-gray-400 text-[10px] mb-2 uppercase tracking-tight">FROM: Student @ L J
-                        University</div>
-                    <p class="font-bold text-xl leading-snug mb-6 text-white/90">"Cleanest code I've seen in years. He
-                        knows how to handle complex state management."</p>
-                    <div class="flex text-neo-pink/60 gap-1 text-lg">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
-                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
-                    </div>
-                </div>
-
-                <div
-                    class="flex-shrink-0 w-[450px] bg-neo-black border-4 border-white/10 p-8 shadow-hard hover:border-neo-purple/50 hover:-translate-y-2 transition-all duration-500 relative group/card overflow-hidden text-left whitespace-normal">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-neo-purple"></div>
-                    <div class="absolute -top-4 -right-4 w-12 h-12 bg-white/5 rotate-45"></div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="font-mono text-neo-purple text-xs font-bold tracking-widest uppercase">
-                            REPORT_004.log</div>
-                        <div class="text-[10px] font-mono text-gray-500">2025.txt</div>
-                    </div>
-                    <div class="font-mono text-gray-400 text-[10px] mb-2 uppercase tracking-tight">FROM: Dev @
-                        CreativeChaos</div>
-                    <p class="font-bold text-xl leading-snug mb-6 text-white/90">"Creative designing idea and provided a
-                        Unique UI experience."</p>
-                    <div class="flex text-neo-purple/60 gap-1 text-lg">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
-                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
-                    </div>
-                </div>
-
-                <div
-                    class="flex-shrink-0 w-[450px] bg-neo-black border-4 border-white/10 p-8 shadow-hard hover:border-neo-orange/50 hover:-translate-y-2 transition-all duration-500 relative group/card overflow-hidden text-left whitespace-normal">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-neo-orange"></div>
-                    <div class="absolute -top-4 -right-4 w-12 h-12 bg-white/5 rotate-45"></div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="font-mono text-neo-orange text-xs font-bold tracking-widest uppercase">
-                            REPORT_005.log</div>
-                        <div class="text-[10px] font-mono text-gray-500">2025.txt</div>
-                    </div>
-                    <div class="font-mono text-gray-400 text-[10px] mb-2 uppercase tracking-tight">FROM: UX Designer @
-                        TechFlow</div>
-                    <p class="font-bold text-xl leading-snug mb-6 text-white/90">"Highly intuitive UX. Delivered exactly
-                        what we needed before we even knew we needed it."</p>
-                    <div class="flex text-neo-orange/60 gap-1 text-lg">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
-                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
-                    </div>
-                </div>
-
-                <!-- Duplicate Set for Loop -->
-                <div
-                    class="flex-shrink-0 w-[450px] bg-neo-black border-4 border-white/10 p-8 shadow-hard hover:border-neo-green/50 hover:-translate-y-2 transition-all duration-500 relative group/card overflow-hidden text-left whitespace-normal">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-neo-green"></div>
-                    <div class="absolute -top-4 -right-4 w-12 h-12 bg-white/5 rotate-45"></div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="font-mono text-neo-green text-xs font-bold tracking-widest uppercase">REPORT_001.log
-                        </div>
-                        <div class="text-[10px] font-mono text-gray-500">2025.txt</div>
-                    </div>
-                    <div class="font-mono text-gray-400 text-[10px] mb-2 uppercase tracking-tight">FROM: Student @ L J
-                        University</div>
-                    <p class="font-bold text-xl leading-snug mb-6 text-white/90">"Dhanvin didn't just build a website,
-                        he
-                        built a high-performance system. Our conversions tripled."</p>
-                    <div class="flex text-neo-green/60 gap-1 text-lg">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
-                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
-                    </div>
-                </div>
-
-                <div
-                    class="flex-shrink-0 w-[450px] bg-neo-black border-4 border-white/10 p-8 shadow-hard hover:border-neo-blue/50 hover:-translate-y-2 transition-all duration-500 relative group/card overflow-hidden text-left whitespace-normal">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-neo-blue"></div>
-                    <div class="absolute -top-4 -right-4 w-12 h-12 bg-white/5 rotate-45"></div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="font-mono text-neo-blue text-xs font-bold tracking-widest uppercase">REPORT_002.log
-                        </div>
-                        <div class="text-[10px] font-mono text-gray-500">2025.txt</div>
-                    </div>
-                    <div class="font-mono text-gray-400 text-[10px] mb-2 uppercase tracking-tight">FROM: CEO @ Alpha
-                        Consultancy</div>
-                    <p class="font-bold text-xl leading-snug mb-6 text-white/90">"Fast, reliable, and actually has good
-                        taste in design. A rare combination."</p>
-                    <div class="flex text-neo-blue/60 gap-1 text-lg">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
-                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
-                    </div>
-                </div>
-
-                <div
-                    class="flex-shrink-0 w-[450px] bg-neo-black border-4 border-white/10 p-8 shadow-hard hover:border-neo-pink/50 hover:-translate-y-2 transition-all duration-500 relative group/card overflow-hidden text-left whitespace-normal">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-neo-pink"></div>
-                    <div class="absolute -top-4 -right-4 w-12 h-12 bg-white/5 rotate-45"></div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="font-mono text-neo-pink text-xs font-bold tracking-widest uppercase">REPORT_003.log
-                        </div>
-                        <div class="text-[10px] font-mono text-gray-500">2025.txt</div>
-                    </div>
-                    <div class="font-mono text-gray-400 text-[10px] mb-2 uppercase tracking-tight">FROM: Student @ L J
-                        University</div>
-                    <p class="font-bold text-xl leading-snug mb-6 text-white/90">"Cleanest code I've seen in years. He
-                        knows how to handle complex state management."</p>
-                    <div class="flex text-neo-pink/60 gap-1 text-lg">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
-                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
-                    </div>
-                </div>
-
-                <div
-                    class="flex-shrink-0 w-[450px] bg-neo-black border-4 border-white/10 p-8 shadow-hard hover:border-neo-purple/50 hover:-translate-y-2 transition-all duration-500 relative group/card overflow-hidden text-left whitespace-normal">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-neo-purple"></div>
-                    <div class="absolute -top-4 -right-4 w-12 h-12 bg-white/5 rotate-45"></div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="font-mono text-neo-purple text-xs font-bold tracking-widest uppercase">
-                            REPORT_004.log</div>
-                        <div class="text-[10px] font-mono text-gray-500">2025.txt</div>
-                    </div>
-                    <div class="font-mono text-gray-400 text-[10px] mb-2 uppercase tracking-tight">FROM: Dev @
-                        CreativeChaos</div>
-                    <p class="font-bold text-xl leading-snug mb-6 text-white/90">"The attention to detail in the
-                        NeoBrutalist implementation is flawless. A master of his craft."</p>
-                    <div class="flex text-neo-purple/60 gap-1 text-lg">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
-                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
-                    </div>
-                </div>
-
-                <div
-                    class="flex-shrink-0 w-[450px] bg-neo-black border-4 border-white/10 p-8 shadow-hard hover:border-neo-orange/50 hover:-translate-y-2 transition-all duration-500 relative group/card overflow-hidden text-left whitespace-normal">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-neo-orange"></div>
-                    <div class="absolute -top-4 -right-4 w-12 h-12 bg-white/5 rotate-45"></div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="font-mono text-neo-orange text-xs font-bold tracking-widest uppercase">
-                            REPORT_005.log</div>
-                        <div class="text-[10px] font-mono text-gray-500">2025.txt</div>
-                    </div>
-                    <div class="font-mono text-gray-400 text-[10px] mb-2 uppercase tracking-tight">FROM: UX Designer @
-                        TechFlow</div>
-                    <p class="font-bold text-xl leading-snug mb-6 text-white/90">"Highly intuitive UX. Delivered exactly
-                        what we needed before we even knew we needed it."</p>
-                    <div class="flex text-neo-orange/60 gap-1 text-lg">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
-                            class="ri-star-fill"></i><i class="ri-star-fill"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-24 px-4 max-w-5xl mx-auto">
-        <div class="bg-white border-4 border-black shadow-hard-xl p-8 md:p-12 relative reveal mt-12">
-            <div
-                class="absolute -top-10 -left-6 bg-neo-yellow border-4 border-black px-6 py-2 shadow-hard rotate-[-5deg]">
-                <span class="font-black text-2xl">START A PROJECT</span>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div>
-                    <h2 class="text-6xl font-black uppercase mb-6 leading-[0.85]">Let's<br>Talk<br>Code.</h2>
-                    <p class="font-mono text-lg mb-8 text-gray-600">
-                        I am currently available for freelance work and open to full-time opportunities.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-4">
-                            <div
-                                class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black">
-                                <i class="ri-mail-line text-xl"></i>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-6xl font-black uppercase mb-6 leading-[0.85] text-white">Let's<br>Talk<br>Code.</h2>
+                        <p class="font-mono text-lg mb-8 text-gray-400">
+                            I am currently available for freelance work and open to full-time opportunities.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 group">
+                                <div
+                                    class="w-12 h-12 bg-white text-black flex items-center justify-center border-2 border-black group-hover:bg-neo-blue group-hover:text-white transition-all">
+                                    <i class="ri-mail-line text-xl"></i>
+                                </div>
+                                <a href="mailto:dhanvin.vadlamudi265@gmail.com"
+                                    class="text-xl font-bold hover:text-neo-blue transition-colors cursor-hover">dhanvin.vadlamudi265@gmail.com</a>
                             </div>
-                            <a href="mailto:dhanvin.vadlamudi265@gmail.com"
-                                class="text-xl font-bold hover:bg-neo-blue cursor-hover">dhanvin.vadlamudi265@gmail.com</a>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div
-                                class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black">
-                                <i class="ri-map-pin-line text-xl"></i>
+                            <div class="flex items-center gap-4 group">
+                                <div
+                                    class="w-12 h-12 bg-white text-black flex items-center justify-center border-2 border-black group-hover:bg-neo-green group-hover:text-white transition-all">
+                                    <i class="ri-map-pin-line text-xl"></i>
+                                </div>
+                                <span class="text-xl font-bold">Hyderabad & Delhi NCR</span>
                             </div>
-                            <span class="text-xl font-bold">Hyderabad & Delhi</span>
                         </div>
                     </div>
-                </div>
 
-                <form id="contact-form" class="space-y-6 bg-gray-50 p-6 border-2 border-black"
-                    onsubmit="event.preventDefault(); this.innerHTML='<div class=\'py-20 text-center\'><i class=\'ri-checkbox-circle-fill text-6xl text-neo-green mb-4 block\'></i><h3 class=\'text-2xl font-black uppercase\'>Transmission Received</h3><p class=\'font-mono text-sm mt-2\'>System response initialized. I will reach out shortly.</p></div>'">
-                    <div class="flex flex-col">
-                        <label class="font-mono font-bold mb-1 uppercase text-xs">Identity</label>
-                        <input type="text" placeholder="NAME / COMPANY"
-                            class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover">
-                    </div>
-                    <div class="flex flex-col">
-                        <label class="font-mono font-bold mb-1 uppercase text-xs">Coordinates</label>
-                        <input type="email" placeholder="EMAIL ADDRESS"
-                            class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover">
-                    </div>
-                    <div class="flex flex-col">
-                        <label class="font-mono font-bold mb-1 uppercase text-xs">Transmission</label>
-                        <textarea rows="4" placeholder="PROJECT DETAILS..."
-                            class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all resize-none cursor-hover"></textarea>
-                    </div>
-                    <button type="submit"
-                        class="w-full bg-neo-blue text-white font-black text-xl py-4 border-2 border-black shadow-hard neo-button hover:bg-neo-black hover:translate-y-1 hover:shadow-none transition-all cursor-hover">
-                        TRANSMIT DATA
-                    </button>
-                </form>
+                    <form id="contact-form" class="space-y-6 bg-white/5 p-6 border-2 border-white/20"
+                        onsubmit="event.preventDefault(); this.innerHTML='<div class=\'py-20 text-center\'><i class=\'ri-checkbox-circle-fill text-6xl text-neo-green mb-4 block\'></i><h3 class=\'text-2xl font-black uppercase text-white\'>Transmission Received</h3><p class=\'font-mono text-sm mt-2 text-gray-400\'>System response initialized. I will reach out shortly.</p></div>'">
+                        <div class="flex flex-col">
+                            <label class="font-mono font-bold mb-1 uppercase text-xs text-gray-500">Identity</label>
+                            <input type="text" placeholder="NAME / COMPANY"
+                                class="bg-black border-2 border-white/20 p-3 font-bold text-white focus:outline-none focus:border-neo-yellow focus:bg-white/10 transition-all cursor-hover">
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="font-mono font-bold mb-1 uppercase text-xs text-gray-500">Coordinates</label>
+                            <input type="email" placeholder="EMAIL ADDRESS"
+                                class="bg-black border-2 border-white/20 p-3 font-bold text-white focus:outline-none focus:border-neo-blue focus:bg-white/10 transition-all cursor-hover">
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="font-mono font-bold mb-1 uppercase text-xs text-gray-500">Transmission</label>
+                            <textarea rows="4" placeholder="PROJECT DETAILS..."
+                                class="bg-black border-2 border-white/20 p-3 font-bold text-white focus:outline-none focus:border-neo-pink focus:bg-white/10 transition-all resize-none cursor-hover"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-neo-blue text-white font-black text-xl py-4 border-2 border-white shadow-[6px_6px_0_rgba(255,255,255,0.1)] hover:bg-white hover:text-black hover:translate-y-1 hover:shadow-none transition-all cursor-hover uppercase">
+                            TRANSMIT DATA
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>

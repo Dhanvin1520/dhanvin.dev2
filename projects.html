@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="All Projects by Dhanvin Vadlamudi | Backend Engineer & AI/ML Specialist.">
+    <title>PROJECTS | DHANVIN.exe</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link type="logo" rel="icon" href="Assets/images/title_icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neo-yellow': '#FBFF48',
+                        'neo-pink': '#FF70A6',
+                        'neo-blue': '#3B82F6',
+                        'neo-green': '#33FF57',
+                        'neo-purple': '#A855F7',
+                        'neo-orange': '#FF9F1C',
+                        'neo-red': '#FF2A2A',
+                        'neo-white': '#FFFDF5',
+                        'neo-black': '#121212',
+                    },
+                    fontFamily: {
+                        'display': ['"Space Grotesk"', 'sans-serif'],
+                        'mono': ['"JetBrains Mono"', 'monospace'],
+                    },
+                    boxShadow: {
+                        'hard': '4px 4px 0px 0px #000',
+                        'hard-sm': '2px 2px 0px 0px #000',
+                        'hard-lg': '8px 8px 0px 0px #000',
+                        'hard-xl': '12px 12px 0px 0px #000',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            cursor: none;
+            background-color: #121212;
+            background-image:
+                radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 40px 40px, 100px 100px, 100px 100px;
+        }
+
+        #cursor {
+            pointer-events: none;
+            position: fixed;
+            z-index: 9999;
+            mix-blend-mode: difference;
+            transition: width 0.2s, height 0.2s, background-color 0.2s, transform 0.1s;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .glitch-hover:hover {
+            animation: glitch-anim 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+            color: #FF2A2A;
+        }
+
+        @keyframes glitch-anim {
+            0% { transform: translate(0) }
+            20% { transform: translate(-2px, 2px) }
+            40% { transform: translate(-2px, -2px) }
+            60% { transform: translate(2px, 2px) }
+            80% { transform: translate(2px, -2px) }
+            100% { transform: translate(0) }
+        }
+    </style>
+</head>
+
+<body class="text-white font-display antialiased">
+    <div id="cursor" class="w-6 h-6 bg-white rounded-full border-2 border-black hidden lg:block"></div>
+
+    <nav class="fixed top-0 w-full z-50 px-4 py-4 pointer-events-none">
+        <div class="max-w-7xl mx-auto flex justify-between items-center pointer-events-auto">
+            <a href="index.html"
+                class="bg-neo-white text-black border-2 border-black px-4 py-1 text-2xl font-black shadow-hard hover:bg-neo-yellow transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-hover">
+                DHANVIN.exe
+            </a>
+
+            <div class="hidden md:flex bg-white border-2 border-black shadow-hard-sm">
+                <a href="index.html#about" class="px-4 py-2 font-black uppercase border-r-2 border-black text-black hover:bg-neo-yellow transition-colors cursor-hover">/ABOUT</a>
+                <a href="index.html#skills" class="px-4 py-2 font-black uppercase border-r-2 border-black text-black hover:bg-neo-blue hover:text-white transition-colors cursor-hover">/SKILLS</a>
+                <a href="index.html#coding-stats" class="px-4 py-2 font-black uppercase border-r-2 border-black text-black hover:bg-neo-green transition-colors cursor-hover">/LOGS</a>
+                <a href="projects.html" class="px-4 py-2 font-black uppercase border-r-2 border-black bg-neo-black text-white hover:bg-neo-pink transition-colors cursor-hover">/WORK</a>
+                <a href="index.html#contact" class="px-4 py-2 font-black uppercase bg-neo-yellow text-black hover:bg-black hover:text-white transition-colors cursor-hover">HIRE ME</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24 px-4 max-w-7xl mx-auto">
+        <div class="mb-20">
+            <h1 class="text-6xl md:text-9xl font-black uppercase tracking-tighter mb-4 text-white">
+                ALL_PROJS<span class="text-neo-pink">.log</span>
+            </h1>
+            <p class="font-mono text-xl max-w-2xl bg-black border-2 border-white/20 p-4 shadow-[8px_8px_0_rgba(255,255,255,0.05)] text-gray-400">
+                > A comprehensive directory of high-performance systems, AI tools, and automation workflows engineered by Dhanvin.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <article class="reveal group bg-neo-black border-4 border-white p-6 shadow-[8px_8px_0_rgba(251,255,72,0.1)] hover:border-neo-yellow transition-all">
+                <div class="bg-black border-2 border-white aspect-video relative overflow-hidden mb-6">
+                    <img src="Assets/images/pr_bot_final.png" alt="PR Review Bot" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="absolute top-2 right-2 flex gap-2">
+                        <span class="bg-neo-red text-white text-[10px] font-black px-2 py-0.5 border border-white">AI_BOT</span>
+                    </div>
+                </div>
+                <div class="flex flex-col h-full">
+                    <h3 class="text-3xl font-black uppercase mb-2 text-white group-hover:text-neo-yellow transition-colors glitch-hover">PR Review Bot</h3>
+                    <p class="font-mono text-xs mb-4 text-gray-400">AI-Powered GitHub Code Review Tool analyzing pull request diffs for critical bugs and security issues.</p>
+                    <div class="flex gap-2 font-mono text-[10px] font-bold flex-wrap mb-6">
+                        <span class="bg-white/10 text-white px-2 py-1">FastAPI</span>
+                        <span class="bg-white/10 text-white px-2 py-1">LLaMA 3</span>
+                        <span class="bg-white/10 text-white px-2 py-1">React</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-white/10">
+                        <a href="https://github.com/Dhanvin1520/prbot" class="flex-1 py-4 border-2 border-neo-yellow bg-neo-yellow text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-yellow transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(251,255,72,0.2)] hover:shadow-none">
+                            <i class="ri-github-fill text-xl"></i> GITHUB_REPO
+                        </a>
+                        <a href="https://prbot-19cc.vercel.app/" class="flex-1 py-4 border-2 border-neo-green bg-neo-green text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-green transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(51,255,87,0.2)] hover:shadow-none">
+                            <i class="ri-external-link-line text-xl"></i> LIVE_DEMO
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="reveal group bg-neo-black border-4 border-white p-6 shadow-[8px_8px_0_rgba(59,130,246,0.1)] hover:border-neo-blue transition-all">
+                <div class="bg-black border-2 border-white aspect-video relative overflow-hidden mb-6">
+                    <img src="Assets/images/meeting_mind_final.png" alt="MeetingMind" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="absolute top-2 right-2 flex gap-2">
+                        <span class="bg-neo-blue text-white text-[10px] font-black px-2 py-0.5 border border-white">CHROME_EXT</span>
+                    </div>
+                </div>
+                <div class="flex flex-col h-full">
+                    <h3 class="text-3xl font-black uppercase mb-2 text-white group-hover:text-neo-blue transition-colors glitch-hover">MeetingMind</h3>
+                    <p class="font-mono text-xs mb-4 text-gray-400">Chrome extension for asynchronous transcription and summarization using BART models.</p>
+                    <div class="flex gap-2 font-mono text-[10px] font-bold flex-wrap mb-6">
+                        <span class="bg-white/10 text-white px-2 py-1">MV3</span>
+                        <span class="bg-white/10 text-white px-2 py-1">FastAPI</span>
+                        <span class="bg-white/10 text-white px-2 py-1">BART</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-white/10">
+                        <a href="https://github.com/Dhanvin1520/meetingmind-ai" class="flex-1 py-4 border-2 border-neo-blue bg-neo-blue text-white flex items-center justify-center gap-3 hover:bg-black hover:text-neo-blue transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(59,130,246,0.2)] hover:shadow-none">
+                            <i class="ri-github-fill text-xl"></i> GITHUB_REPO
+                        </a>
+                        <a href="https://meetingmind-ai-qw6i.vercel.app/" class="flex-1 py-4 border-2 border-neo-green bg-neo-green text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-green transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(51,255,87,0.2)] hover:shadow-none">
+                            <i class="ri-external-link-line text-xl"></i> LIVE_DEMO
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="reveal group bg-neo-black border-4 border-white p-6 shadow-[8px_8px_0_rgba(255,112,166,0.1)] hover:border-neo-pink transition-all">
+                <div class="bg-black border-2 border-white aspect-video relative overflow-hidden mb-6">
+                    <img src="Assets/images/peerspace_final.png" alt="PeerSpace" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="absolute top-2 right-2 flex gap-2">
+                        <span class="bg-neo-pink text-white text-[10px] font-black px-2 py-0.5 border border-white">COLLAB</span>
+                    </div>
+                </div>
+                <div class="flex flex-col h-full">
+                    <h3 class="text-3xl font-black uppercase mb-2 text-white group-hover:text-neo-pink transition-colors glitch-hover">PeerSpace</h3>
+                    <p class="font-mono text-xs mb-4 text-gray-400">Real-time collaboration platform with Socket.io and WebRTC for P2P video and study tools.</p>
+                    <div class="flex gap-2 font-mono text-[10px] font-bold flex-wrap mb-6">
+                        <span class="bg-white/10 text-white px-2 py-1">React</span>
+                        <span class="bg-white/10 text-white px-2 py-1">Socket.io</span>
+                        <span class="bg-white/10 text-white px-2 py-1">WebRTC</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-white/10">
+                        <a href="https://github.com/Dhanvin1520/Ultimate-B-Tech-Buddy" class="flex-1 py-4 border-2 border-neo-pink bg-neo-pink text-white flex items-center justify-center gap-3 hover:bg-black hover:text-neo-pink transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(255,112,166,0.2)] hover:shadow-none">
+                            <i class="ri-github-fill text-xl"></i> GITHUB_REPO
+                        </a>
+                        <a href="https://ultimate-b-tech-buddy-vpld.vercel.app/" class="flex-1 py-4 border-2 border-neo-green bg-neo-green text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-green transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(51,255,87,0.2)] hover:shadow-none">
+                            <i class="ri-external-link-line text-xl"></i> LIVE_DEMO
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="reveal group bg-neo-black border-4 border-white p-6 shadow-[8px_8px_0_rgba(255,159,28,0.1)] hover:border-neo-orange transition-all">
+                <div class="bg-black border-2 border-white aspect-video relative overflow-hidden mb-6">
+                    <img src="Assets/images/credit_risk_final.png" alt="Credit Risk RAG" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="absolute top-2 right-2 flex gap-2">
+                        <span class="bg-neo-orange text-white text-[10px] font-black px-2 py-0.5 border border-white">FINTECH</span>
+                    </div>
+                </div>
+                <div class="flex flex-col h-full">
+                    <h3 class="text-3xl font-black uppercase mb-2 text-white group-hover:text-neo-orange transition-colors glitch-hover">Credit Risk RAG</h3>
+                    <p class="font-mono text-xs mb-4 text-gray-400">Predictive lending system using XGBoost and RAG-based agent for policy retrieval.</p>
+                    <div class="flex gap-2 font-mono text-[10px] font-bold flex-wrap mb-6">
+                        <span class="bg-white/10 text-white px-2 py-1">Python</span>
+                        <span class="bg-white/10 text-white px-2 py-1">LangGraph</span>
+                        <span class="bg-white/10 text-white px-2 py-1">FAISS</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-white/10">
+                        <a href="https://github.com/Dhanvin1520/Credit_Risk_RAGSystem/" class="flex-1 py-4 border-2 border-neo-orange bg-neo-orange text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-orange transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(255,159,28,0.2)] hover:shadow-none">
+                            <i class="ri-github-fill text-xl"></i> GITHUB_REPO
+                        </a>
+                        <a href="https://credit-risk-system6.streamlit.app/" class="flex-1 py-4 border-2 border-neo-green bg-neo-green text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-green transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(51,255,87,0.2)] hover:shadow-none">
+                            <i class="ri-external-link-line text-xl"></i> LIVE_DEMO
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="bg-neo-black text-white py-12 px-4 border-t-4 border-black">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="font-black text-4xl uppercase tracking-tighter">
+                DHANVIN<span class="text-neo-yellow">.EXE</span>
+            </div>
+            <div class="font-mono text-sm opacity-50">
+                &copy; 2026 Dhanvin Vadlamudi. ALL_SYSTEMS_OPTIMIZED.
+            </div>
+            <a href="index.html" class="bg-neo-yellow text-black px-6 py-2 font-black uppercase border-2 border-black shadow-hard hover:shadow-none transition-all cursor-hover">
+                BACK_TO_HOME
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Custom Cursor
+        const cursor = document.getElementById('cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Add interactive hover effect to cursor
+        const interactables = document.querySelectorAll('.cursor-hover');
+        interactables.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(2)';
+                cursor.style.backgroundColor = 'rgba(251, 255, 72, 0.5)';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+                cursor.style.backgroundColor = 'white';
+            });
+        });
+
+        // Reveal Animation on Scroll
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
