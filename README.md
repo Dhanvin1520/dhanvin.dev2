@@ -1,12 +1,4 @@
-# DHANVIN.exe // PORTFOLIO_V2
 
-A high-performance, NeoBrutalist-inspired portfolio showcase for **Dhanvin Vadlamudi**. Built with a focus on raw aesthetics, grid layouts, and advanced API integrations.
-
-## 🚀 TECH_STACK
-
-- **CORE**: HTML5 / Vanilla CSS / JavaScript (ES6+)
-- **STYLING**: TailwindCSS v3.4 (NeoBrutalist Preset)
-- **ICONS**: Remix Icon / Font Awesome
 - **ANIMATIONS**: GSAP / ScrollReveal.js / Custom CSS Keyframes
 - **APIS**: GitHub API / LeetCode Stats API (alfa-leetcode)
 
