@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="All Projects by Dhanvin Vadlamudi | Backend Engineer & AI/ML Specialist.">
+        content="All projects by Dhanvin Vadlamudi | Backend &amp; AI/ML Engineer. Distributed systems, LLM security gateways, and AI-powered tools.">
     <title>PROJECTS | DHANVIN.exe</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link type="logo" rel="icon" href="Assets/images/title_icon.png">
+    <link rel="icon" type="image/png" href="Assets/images/favicon_d.png">
+    <link rel="apple-touch-icon" href="Assets/images/favicon_d.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap"
@@ -91,6 +92,14 @@
             80% { transform: translate(2px, -2px) }
             100% { transform: translate(0) }
         }
+        /* Project architecture diagrams: font scales with the box width so lines never overflow */
+        .diagram {
+            container-type: inline-size;
+        }
+
+        .diagram-text {
+            font-size: clamp(8px, 3.2cqw, 13px);
+        }
     </style>
 </head>
 
@@ -116,7 +125,7 @@
 
     <main class="pt-32 pb-24 px-4 max-w-7xl mx-auto">
         <div class="mb-20">
-            <h1 class="text-6xl md:text-9xl font-black uppercase tracking-tighter mb-4 text-white">
+            <h1 class="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter mb-4 text-white">
                 ALL_PROJS<span class="text-neo-pink">.log</span>
             </h1>
             <p class="font-mono text-xl max-w-2xl bg-black border-2 border-white/20 p-4 shadow-[8px_8px_0_rgba(255,255,255,0.05)] text-gray-400">
@@ -125,34 +134,148 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Project 1 -->
+            <!-- Project 1: Sablegate AI -->
             <article class="reveal group bg-neo-black border-4 border-white p-6 shadow-[8px_8px_0_rgba(251,255,72,0.1)] hover:border-neo-yellow transition-all">
-                <div class="bg-black border-2 border-white aspect-video relative overflow-hidden mb-6">
-                    <img src="Assets/images/pr_bot_final.png" alt="PR Review Bot" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
-                    <div class="absolute top-2 right-2 flex gap-2">
-                        <span class="bg-neo-red text-white text-[10px] font-black px-2 py-0.5 border border-white">AI_BOT</span>
+                    <div class="diagram bg-black border-2 border-white relative mb-6 px-3 pt-10 pb-4 sm:aspect-video flex flex-col justify-center gap-4">
+                        <div class="absolute top-2 right-2 flex gap-2">
+                            <span class="bg-neo-yellow text-black text-[10px] font-black px-2 py-0.5 border border-white">LLM_SECURITY</span>
+                        </div>
+                        <div class="diagram-text font-mono text-gray-300 group-hover:text-white transition-colors leading-relaxed" aria-label="Sablegate AI architecture diagram">
+                            <div class="flex flex-wrap gap-x-[1ch]"><span class="whitespace-pre">APP ──▶ <span class="text-neo-yellow font-bold">[SABLEGATE]</span></span><span class="whitespace-pre">──▶ OpenAI · Anthropic · Gemini</span></div>
+                            <div class="whitespace-pre">   ├ PII redaction: Aadhaar · PAN · IFSC · cards</div>
+                            <div class="whitespace-pre">   ├ prompt-injection &amp; output guards</div>
+                            <div class="whitespace-pre">   └ SHA-256 hash-chained audit ledger</div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="border-2 border-neo-green text-neo-green font-mono text-[10px] font-bold px-2 py-0.5">1,200 req/s</span>
+                            <span class="border-2 border-neo-green text-neo-green font-mono text-[10px] font-bold px-2 py-0.5">2.5 ms p99</span>
+                            <span class="border-2 border-neo-green text-neo-green font-mono text-[10px] font-bold px-2 py-0.5">100% PII recall</span>
+                        </div>
                     </div>
-                </div>
-                <div class="flex flex-col h-full">
-                    <h3 class="text-3xl font-black uppercase mb-2 text-white group-hover:text-neo-yellow transition-colors glitch-hover">PR Review Bot</h3>
-                    <p class="font-mono text-xs mb-4 text-gray-400">AI-Powered GitHub Code Review Tool analyzing pull request diffs for critical bugs and security issues.</p>
-                    <div class="flex gap-2 font-mono text-[10px] font-bold flex-wrap mb-6">
-                        <span class="bg-white/10 text-white px-2 py-1">FastAPI</span>
-                        <span class="bg-white/10 text-white px-2 py-1">LLaMA 3</span>
-                        <span class="bg-white/10 text-white px-2 py-1">React</span>
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-3xl font-black uppercase mb-2 text-white group-hover:text-neo-yellow transition-colors glitch-hover">Sablegate AI</h3>
+                        <p class="font-mono text-xs mb-4 text-gray-400">Open-source, OpenAI-compatible security gateway between apps and LLM providers: PII redaction, prompt-injection defense, circuit-breaker failover and an Ed25519-signed, tamper-evident audit ledger.</p>
+                        <div class="flex gap-2 font-mono text-[10px] font-bold flex-wrap mb-6">
+                            <span class="bg-white/10 text-white px-2 py-1">Python</span>
+                            <span class="bg-white/10 text-white px-2 py-1">FastAPI</span>
+                            <span class="bg-white/10 text-white px-2 py-1">Next.js</span>
+                            <span class="bg-white/10 text-white px-2 py-1">Docker</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-white/10">
+                            <a href="https://github.com/Dhanvin1520/Sablegate-AI" target="_blank" rel="noopener" class="flex-1 py-4 border-2 border-neo-yellow bg-neo-yellow text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-yellow transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(251,255,72,0.2)] hover:shadow-none">
+                                <i class="ri-github-fill text-xl"></i> GITHUB_REPO
+                            </a>
+                        </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-white/10">
-                        <a href="https://github.com/Dhanvin1520/prbot" class="flex-1 py-4 border-2 border-neo-yellow bg-neo-yellow text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-yellow transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(251,255,72,0.2)] hover:shadow-none">
-                            <i class="ri-github-fill text-xl"></i> GITHUB_REPO
-                        </a>
-                        <a href="https://prbot-19cc.vercel.app/" class="flex-1 py-4 border-2 border-neo-green bg-neo-green text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-green transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(51,255,87,0.2)] hover:shadow-none">
-                            <i class="ri-external-link-line text-xl"></i> LIVE_DEMO
-                        </a>
-                    </div>
-                </div>
-            </article>
+                </article>
 
-            <!-- Project 2 -->
+            <!-- Project 2: Portside -->
+            <article class="reveal group bg-neo-black border-4 border-white p-6 shadow-[8px_8px_0_rgba(59,130,246,0.1)] hover:border-neo-blue transition-all">
+                    <div class="diagram bg-black border-2 border-white relative mb-6 px-3 pt-10 pb-4 sm:aspect-video flex flex-col justify-center gap-4">
+                        <div class="absolute top-2 right-2 flex gap-2">
+                            <span class="bg-neo-blue text-white text-[10px] font-black px-2 py-0.5 border border-white">DISTRIBUTED</span>
+                        </div>
+                        <div class="diagram-text font-mono text-gray-300 group-hover:text-white transition-colors leading-relaxed" aria-label="Portside architecture diagram">
+                            <div class="flex flex-wrap gap-x-[1ch]"><span class="whitespace-pre">portctl ──▶ <span class="text-neo-blue font-bold">[CONTROL PLANE]</span></span><span class="whitespace-pre">──gRPC──▶ node-1 · node-2 · node-3</span></div>
+                            <div class="whitespace-pre">   ├ resource-aware scheduler</div>
+                            <div class="whitespace-pre">   ├ level-triggered reconcile loop</div>
+                            <div class="whitespace-pre">   └ SQLite state store</div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="border-2 border-neo-green text-neo-green font-mono text-[10px] font-bold px-2 py-0.5">&lt;5 s node failover</span>
+                            <span class="border-2 border-neo-green text-neo-green font-mono text-[10px] font-bold px-2 py-0.5">0 failed requests in rollout</span>
+                            <span class="border-2 border-neo-green text-neo-green font-mono text-[10px] font-bold px-2 py-0.5">chaos-tested</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-3xl font-black uppercase mb-2 text-white group-hover:text-neo-blue transition-colors glitch-hover">Portside</h3>
+                        <p class="font-mono text-xs mb-4 text-gray-400">Kubernetes-inspired container orchestrator in TypeScript with a gRPC control plane, resource-aware scheduler, self-healing reconcile loop and zero-downtime rolling updates.</p>
+                        <div class="flex gap-2 font-mono text-[10px] font-bold flex-wrap mb-6">
+                            <span class="bg-white/10 text-white px-2 py-1">TypeScript</span>
+                            <span class="bg-white/10 text-white px-2 py-1">gRPC</span>
+                            <span class="bg-white/10 text-white px-2 py-1">SQLite</span>
+                            <span class="bg-white/10 text-white px-2 py-1">Docker</span>
+                            <span class="bg-white/10 text-white px-2 py-1">Vitest</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-white/10">
+                            <a href="https://github.com/Dhanvin1520/Portside" target="_blank" rel="noopener" class="flex-1 py-4 border-2 border-neo-blue bg-neo-blue text-white flex items-center justify-center gap-3 hover:bg-black hover:text-neo-blue transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(59,130,246,0.2)] hover:shadow-none">
+                                <i class="ri-github-fill text-xl"></i> GITHUB_REPO
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            <!-- Project 3: Parchi AI -->
+            <article class="reveal group bg-neo-black border-4 border-white p-6 shadow-[8px_8px_0_rgba(51,255,87,0.1)] hover:border-neo-green transition-all">
+                    <div class="diagram bg-black border-2 border-white relative mb-6 px-3 pt-10 pb-4 sm:aspect-video flex flex-col justify-center gap-4">
+                        <div class="absolute top-2 right-2 flex gap-2">
+                            <span class="bg-neo-green text-black text-[10px] font-black px-2 py-0.5 border border-white">AI_AGENTS</span>
+                        </div>
+                        <div class="diagram-text font-mono text-gray-300 group-hover:text-white transition-colors leading-relaxed" aria-label="Parchi AI architecture diagram">
+                            <div class="flex flex-wrap gap-x-[1ch]"><span class="whitespace-pre">WhatsApp ──▶ <span class="text-neo-green font-bold">[5-AGENT LANGGRAPH]</span></span><span class="whitespace-pre">──▶ UPI payment link</span></div>
+                            <div class="whitespace-pre">   ├ input: handwritten list · voice · text</div>
+                            <div class="whitespace-pre">   ├ catalog: BM25 + dense + reranker</div>
+                            <div class="whitespace-pre">   └ cart · payment · follow-up agents</div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="border-2 border-neo-green text-neo-green font-mono text-[10px] font-bold px-2 py-0.5">5 LangGraph agents</span>
+                            <span class="border-2 border-neo-green text-neo-green font-mono text-[10px] font-bold px-2 py-0.5">17.8 ms webhook ack</span>
+                            <span class="border-2 border-neo-green text-neo-green font-mono text-[10px] font-bold px-2 py-0.5">0 duplicate orders on 3x replay</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-3xl font-black uppercase mb-2 text-white group-hover:text-neo-green transition-colors glitch-hover">Parchi AI</h3>
+                        <p class="font-mono text-xs mb-4 text-gray-400">WhatsApp ordering agent for kirana stores: customers send photos of handwritten lists, Hinglish voice notes or text, and 5 LangGraph agents parse them, match catalog products with hybrid search, build carts with live stock checks and send Razorpay UPI payment links.</p>
+                        <div class="flex gap-2 font-mono text-[10px] font-bold flex-wrap mb-6">
+                            <span class="bg-white/10 text-white px-2 py-1">Python</span>
+                            <span class="bg-white/10 text-white px-2 py-1">FastAPI</span>
+                            <span class="bg-white/10 text-white px-2 py-1">LangGraph</span>
+                            <span class="bg-white/10 text-white px-2 py-1">PostgreSQL</span>
+                            <span class="bg-white/10 text-white px-2 py-1">Next.js</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-white/10">
+                            <a href="index.html#contact" class="flex-1 py-4 border-2 border-neo-green bg-neo-green text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-green transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(51,255,87,0.2)] hover:shadow-none" title="Private repository: get in touch for access">
+                                <i class="ri-lock-2-line text-xl"></i> PRIVATE_REPO · REQUEST_ACCESS
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            <!-- Project 4: RecoverIQ -->
+            <article class="reveal group bg-neo-black border-4 border-white p-6 shadow-[8px_8px_0_rgba(255,159,28,0.1)] hover:border-neo-orange transition-all">
+                    <div class="diagram bg-black border-2 border-white relative mb-6 px-3 pt-10 pb-4 sm:aspect-video flex flex-col justify-center gap-4">
+                        <div class="absolute top-2 right-2 flex gap-2">
+                            <span class="bg-neo-orange text-black text-[10px] font-black px-2 py-0.5 border border-white">FINTECH</span>
+                        </div>
+                        <div class="diagram-text font-mono text-gray-300 group-hover:text-white transition-colors leading-relaxed" aria-label="RecoverIQ architecture diagram">
+                            <div class="flex flex-wrap gap-x-[1ch]"><span class="whitespace-pre">failed payments ──▶ <span class="text-neo-orange font-bold">[DIAGNOSER]</span></span><span class="whitespace-pre">──▶ policy ──▶ executor</span></div>
+                            <div class="whitespace-pre">   ├ stopping rules + expected-value gate</div>
+                            <div class="whitespace-pre">   ├ systemic degradation detection</div>
+                            <div class="whitespace-pre">   └ JSONL audit trail · exception list</div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="border-2 border-neo-green text-neo-green font-mono text-[10px] font-bold px-2 py-0.5">₹46,096 net recovered</span>
+                            <span class="border-2 border-neo-green text-neo-green font-mono text-[10px] font-bold px-2 py-0.5">0 compliance violations</span>
+                            <span class="border-2 border-neo-green text-neo-green font-mono text-[10px] font-bold px-2 py-0.5">41 unit tests</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col h-full">
+                        <h3 class="text-3xl font-black uppercase mb-2 text-white group-hover:text-neo-orange transition-colors glitch-hover">RecoverIQ</h3>
+                        <p class="font-mono text-xs mb-4 text-gray-400">Compliant AI agent that recovers failed payments: it diagnoses the root cause of each failure, enforces stopping rules, and proves net money recovered with zero fraud-retry violations.</p>
+                        <div class="flex gap-2 font-mono text-[10px] font-bold flex-wrap mb-6">
+                            <span class="bg-white/10 text-white px-2 py-1">Python</span>
+                            <span class="bg-white/10 text-white px-2 py-1">FastAPI</span>
+                            <span class="bg-white/10 text-white px-2 py-1">React</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-white/10">
+                            <a href="https://github.com/Dhanvin1520/RecoverIQ" target="_blank" rel="noopener" class="flex-1 py-4 border-2 border-neo-orange bg-neo-orange text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-orange transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(255,159,28,0.2)] hover:shadow-none">
+                                <i class="ri-github-fill text-xl"></i> GITHUB_REPO
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            <!-- Project 5: MeetingMind -->
             <article class="reveal group bg-neo-black border-4 border-white p-6 shadow-[8px_8px_0_rgba(59,130,246,0.1)] hover:border-neo-blue transition-all">
                 <div class="bg-black border-2 border-white aspect-video relative overflow-hidden mb-6">
                     <img src="Assets/images/meeting_mind_final.png" alt="MeetingMind" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
@@ -169,17 +292,17 @@
                         <span class="bg-white/10 text-white px-2 py-1">BART</span>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-white/10">
-                        <a href="https://github.com/Dhanvin1520/meetingmind-ai" class="flex-1 py-4 border-2 border-neo-blue bg-neo-blue text-white flex items-center justify-center gap-3 hover:bg-black hover:text-neo-blue transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(59,130,246,0.2)] hover:shadow-none">
+                        <a href="https://github.com/Dhanvin1520/meetingmind-ai" target="_blank" rel="noopener" class="flex-1 py-4 border-2 border-neo-blue bg-neo-blue text-white flex items-center justify-center gap-3 hover:bg-black hover:text-neo-blue transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(59,130,246,0.2)] hover:shadow-none">
                             <i class="ri-github-fill text-xl"></i> GITHUB_REPO
                         </a>
-                        <a href="https://meetingmind-ai-qw6i.vercel.app/" class="flex-1 py-4 border-2 border-neo-green bg-neo-green text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-green transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(51,255,87,0.2)] hover:shadow-none">
+                        <a href="https://meetingmind-ai-qw6i.vercel.app/" target="_blank" rel="noopener" class="flex-1 py-4 border-2 border-neo-green bg-neo-green text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-green transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(51,255,87,0.2)] hover:shadow-none">
                             <i class="ri-external-link-line text-xl"></i> LIVE_DEMO
                         </a>
                     </div>
                 </div>
             </article>
 
-            <!-- Project 3 -->
+            <!-- Project 6: PeerSpace -->
             <article class="reveal group bg-neo-black border-4 border-white p-6 shadow-[8px_8px_0_rgba(255,112,166,0.1)] hover:border-neo-pink transition-all">
                 <div class="bg-black border-2 border-white aspect-video relative overflow-hidden mb-6">
                     <img src="Assets/images/peerspace_final.png" alt="PeerSpace" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
@@ -196,37 +319,10 @@
                         <span class="bg-white/10 text-white px-2 py-1">WebRTC</span>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-white/10">
-                        <a href="https://github.com/Dhanvin1520/Ultimate-B-Tech-Buddy" class="flex-1 py-4 border-2 border-neo-pink bg-neo-pink text-white flex items-center justify-center gap-3 hover:bg-black hover:text-neo-pink transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(255,112,166,0.2)] hover:shadow-none">
+                        <a href="https://github.com/Dhanvin1520/PeerSpace" target="_blank" rel="noopener" class="flex-1 py-4 border-2 border-neo-pink bg-neo-pink text-white flex items-center justify-center gap-3 hover:bg-black hover:text-neo-pink transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(255,112,166,0.2)] hover:shadow-none">
                             <i class="ri-github-fill text-xl"></i> GITHUB_REPO
                         </a>
-                        <a href="https://ultimate-b-tech-buddy-vpld.vercel.app/" class="flex-1 py-4 border-2 border-neo-green bg-neo-green text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-green transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(51,255,87,0.2)] hover:shadow-none">
-                            <i class="ri-external-link-line text-xl"></i> LIVE_DEMO
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 4 -->
-            <article class="reveal group bg-neo-black border-4 border-white p-6 shadow-[8px_8px_0_rgba(255,159,28,0.1)] hover:border-neo-orange transition-all">
-                <div class="bg-black border-2 border-white aspect-video relative overflow-hidden mb-6">
-                    <img src="Assets/images/credit_risk_final.png" alt="Credit Risk RAG" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
-                    <div class="absolute top-2 right-2 flex gap-2">
-                        <span class="bg-neo-orange text-white text-[10px] font-black px-2 py-0.5 border border-white">FINTECH</span>
-                    </div>
-                </div>
-                <div class="flex flex-col h-full">
-                    <h3 class="text-3xl font-black uppercase mb-2 text-white group-hover:text-neo-orange transition-colors glitch-hover">Credit Risk RAG</h3>
-                    <p class="font-mono text-xs mb-4 text-gray-400">Predictive lending system using XGBoost and RAG-based agent for policy retrieval.</p>
-                    <div class="flex gap-2 font-mono text-[10px] font-bold flex-wrap mb-6">
-                        <span class="bg-white/10 text-white px-2 py-1">Python</span>
-                        <span class="bg-white/10 text-white px-2 py-1">LangGraph</span>
-                        <span class="bg-white/10 text-white px-2 py-1">FAISS</span>
-                    </div>
-                    <div class="flex flex-col sm:flex-row gap-4 mt-auto pt-6 border-t border-white/10">
-                        <a href="https://github.com/Dhanvin1520/Credit_Risk_RAGSystem/" class="flex-1 py-4 border-2 border-neo-orange bg-neo-orange text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-orange transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(255,159,28,0.2)] hover:shadow-none">
-                            <i class="ri-github-fill text-xl"></i> GITHUB_REPO
-                        </a>
-                        <a href="https://credit-risk-system6.streamlit.app/" class="flex-1 py-4 border-2 border-neo-green bg-neo-green text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-green transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(51,255,87,0.2)] hover:shadow-none">
+                        <a href="https://ultimate-b-tech-buddy-vpld.vercel.app/" target="_blank" rel="noopener" class="flex-1 py-4 border-2 border-neo-green bg-neo-green text-black flex items-center justify-center gap-3 hover:bg-black hover:text-neo-green transition-all cursor-hover font-black uppercase text-sm shadow-[4px_4px_0_rgba(51,255,87,0.2)] hover:shadow-none">
                             <i class="ri-external-link-line text-xl"></i> LIVE_DEMO
                         </a>
                     </div>
